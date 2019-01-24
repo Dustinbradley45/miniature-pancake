@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>What is a Clip-Path?</title>
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto:300|Roboto+Mono" rel="stylesheet">  
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<header>
+    <div class="headerBackground">
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class='headerTitle'>  
+            <h1>We Love Clip-Paths!</h1> 
+        </div> 
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+    </div>
+</header>
+<main class='wrapper'>
+    <section class='mainInfo whatIs'>
+        <div>
+            <h2>What is a Clip-Path?</h2>
+            <p>A clip path is a way to 'cut' portions and sizes of elements on your webpage. In actuality, while it looks like it is cut, the portions are actually just hidden! In other words it defines what parts of an image is visible.</p>
+            <p>You can use clip-path properties on backgrounds, images, and most semantic elements out there (i.e. divs, sections, etc.)</p>
+        <h4>Tips for CSS clip-paths:</h4>
+        <div class="tipsFor">
+            <ul>
+                <li>Since clip-path does not actually cut any portion of the element the space that is then blank will still be registering to your browser as filled space! For instance, if you have a div element with a width and height of 500px, and use clip-path to change the shape, the newly created white space will still be counted as the total size of the originally shaped div you had created. You can see this by opening up your dev tools. </li>
+            </ul>
+        </div>
+        <div class="whenCanI">
+            <h4>When Can I use Clip-Path</h4>
+            <p>Clip-Path is compatible on most modern browsers, but is not compatible with IE or Edge.
+        </div>
+       
+    </section>
+    <section class="typesOfClipPath">
+
+
+        <!-- TYPES OF CLIP PATHS -->
+        <div class="circle">
+            <ul>
+                <li><h2>Circle Clip-Paths</h2></li>
+                <div class="infoSessionCircle">
+                    <li><p>Using the circle property with clip-path will give you a circle! You have to pass in the radius value(in px).Optionally, you can define the location value if needed!</p></li>
+                    <li>
+                        <p>Syntax: clip-path:circle ([radius.value] <span class='optional'>*at [x.location y.location]*</span>)</p>
+                    </li>
+                    <li><p><span class='bold'>Code as shown: clip-path: circle(100px).</span></p></li>
+                    <li>
+                        <p class="makeMeSmall">*Property Optional*</p>
+                    </li>
+                </div>
+            </ul>
+            <div class="circleClip">
+            </div>
+        </div>
+
+
+
+        <div class="ellipse">
+            <ul>
+                <li><h2>Ellipse Clip-Paths</h2></li>
+                <div class="infoSessionEllipse">
+                    <li><p>Using the ellipse property with clip-path will give you ELLIPSES! You can use this property by passing in the shape radius length and then the height (these values can be in either px or % value). Optionally, you can define the location value if needed!</p></li>
+                    <li><p>Syntax: clip-path: ellipse ([length.value height.value] <span class='optional'>*at [X.location Y.location]*</span>)</p></li>
+                    <li><p><span class='bold'>Code as shown: clip-path: ellipse (150px 70px at 50% 50%)</span></p></li>
+                    <li><p class="makeMeSmall">*Property Optional*</p></li>
+                </div>
+            </ul>           
+            <div class="ellipseClip">
+             </div>
+        </div>
+        <div class="polygon">
+            <ul>
+                <li><h2>Polygon Clip-Paths</h2></li>
+                <div class="infoSessionPolygon">
+                    <li><p>The Polygon property allows you to use polygons to create fun shapes of all varieties! For each 'point' of the polygon we set a percentage value for both the X and Y values. Note: There are really great clip-path polygon resources out there like <a href="http://bennettfeely.com/clippy/">Clippy!</a></li>
+                    <div class="polygonSyntax">
+                        <li><p class='leftPolygon'><span class='bold'>Code as shown: clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%)</span></p></li>
+                        <li><p class='rightPolygon'><span class='bold'>Code as shown: clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);</span></p></li>
+                    </div>
+                 </div>
+            </ul>
+            <div class="morePolygonFun">
+                <div class="polygonClip">
+                </div>
+                <div class="polygonClip2">
+                </div>
+            </div>
+        </div>
+    </section>
+   <div class="helpfulLinks">
+        <h3> Helpful Links:</h3>
+        <ul>
+            <li>
+                <a href="https://beyond-paper.com/clip-path-polygons-explained/">Beyond Paper: Clip Path Polygons Explained</a>
+            </li>
+            <li>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path">MDN Web Docs: Clip-Path</a>
+            </li><li>
+                <a href="https://css-tricks.com/clipping-masking-css/">CSS-Tricks: Clipping and Masking in CSS</a>
+            </li>
+        
+        </ul>
+
+   
+    
+    <h3>
+    </main> 
+    <footer>
+        <p>Dustin 2019</p>
+    </footer>
+
+</body>
+</html>
