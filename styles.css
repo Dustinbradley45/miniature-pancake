@@ -151,6 +151,8 @@ p{
     align-items:center;
 }
 
+
+
 .circle{
     margin-top:40px;
     margin-bottom:50px;
@@ -252,24 +254,30 @@ p{
     height: 100px;
    background-color:#324b4e;
    text-align:center;
-   color:white;
+   color:#add2d7;
    display:flex;
+   text-transform: uppercase;
    flex-direction:column;
    justify-content:center;
    align-items:center;
-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%)
+   padding:0;
+   margin:20px 0;
+clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%)
 }
 
+
 .inTheWild--header h3{
-   
+
     height: 100px;
    background-color:#324b4e;
    text-align:center;
-   color:white;
+   color:#add2d7;
    display:flex;
+   text-transform: uppercase;
    flex-direction:column;
    justify-content:center;
    align-items:center;
+   margin-top:70px;
    clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
    font-family:'roboto mono', sans-serif;
 }
@@ -280,7 +288,7 @@ clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%)
 
 .polygonClip{
      border: #ff8c40 5px solid;
-    width: 48%;
+    width: 49%;
     height:450px;
     background-color:#938ea4;
     clip-path:polygon(0 0, 100% 0%, 100% 100%, 0% 100%, 0 100%, 0 100%, 0 100%);
@@ -295,7 +303,7 @@ clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%)
 
 .polygonClip2{
      border: #ff8c40 5px solid;
-    width: 48%;
+    width: 49%;
     height: 450px;
     background-color:#d1ebe3;
     clip-path:polygon(0 0, 100% 0%, 100% 100%, 0% 100%, 0 100%, 0 100%, 0 100%);
@@ -321,7 +329,7 @@ a{
 
 footer{
     background-color: #324b4e;
-    height: 10vh;
+    height: 5vh;
     margin-top: 50px;
     color:white;
     font-size: 14px;
@@ -329,11 +337,17 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    clear:both;
 }
 
 .helpfulLinks{
-    margin:0 auto;
+   
     text-align:center;
+    background-color:#d1ebe3;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    width: 40%;
+    height: 400px;
+    margin-bottom:50px;
 }
 
 
@@ -351,8 +365,14 @@ footer{
     padding: 2px;
 }
 
+.helpfulLinksStop{
+    padding:0;
+
+}
+
 .helpfulLinks h3{
     font-family: 'roboto Mono', sans-serif;
+    padding-top:100px;
 }
 
 .tipsFor{
@@ -377,3 +397,194 @@ footer{
     width: 100%;
     text-align:left;
 }
+
+
+.rombusDemo{
+    background-image:url('./assets/600.jpg');
+    width: 300px;
+    height: 300px;
+    display:inline-block;
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+
+}
+
+.rombusDemoWrapper{
+   max-width: 650px;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    margin:0 auto;
+}
+
+.center{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+}
+
+.rombusTop{
+   background-position:top;
+   position:relative;
+   top:147.5px;
+}
+.rombusRight{
+    background-position: left;
+    position:relative;
+    right:5px
+
+}
+
+.rombusLeft{
+    background-position: right;
+    position:relative;
+    left: 5px;
+}
+
+
+.rombusBottom{
+    background-position:bottom;
+    position:relative;
+    bottom:147.5px
+}
+
+.wordsContainer{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    
+
+}
+
+.overlay{
+    display:none;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+   background-color:rgba(216, 216, 216, 0.9)
+}
+
+.rombusTop .overlay p{
+    position:relative;
+    font-size: 35px;
+    top:145px;
+    color:black;
+}
+
+.rombusTop:hover .overlay{
+    display:inline-block;
+}
+
+.rombusBottom .overlay p {
+    position:relative;
+    font-size: 35px;
+    top:135px;
+}
+
+.rombusBottom:hover .overlay{
+    display:inline-block;
+}
+
+.rombusLeft:hover .overlay{
+    display:inline-block;
+}
+
+.rombusRight:hover .overlay{
+    display:inline-block
+}
+
+.rombusDemo{
+
+}
+
+
+
+/* <section class='rombusDemoWrapper'>
+                <div class="rombusDemo rombusTop">
+                    <div class="overlay">
+                        <div class="wordsContainer">
+                            <p>Home</p>
+                        </div>
+                    </div>
+                </div> */
+
+
+
+
+.wordsContainer p{
+    font-size:35px;
+}
+
+/* .wordsContainer p:hover{
+    border-bottom: 1px solid black;
+} */
+
+
+
+.overlayContainer{
+  
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+
+}
+
+.overlayContainer p:hover,
+.wordsContainer p:hover{
+    color:#324b4e;
+}
+
+
+.rombusLeft .overlayContainer p{
+    position:relative;
+    font-size: 35px;
+}
+
+.rombusRight .overlayContainer p{
+    position:relative;
+   
+       font-size: 35px;
+}
+
+ .otherLinks{
+     text-align:center;
+    background-color:#d1ebe3;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    width: 40%;
+    height: 400px;
+    margin-bottom:50px;
+    margin-right:20px;
+ }
+
+ .otherLinks p{
+}
+
+
+.otherLinksStop{
+    position:relative;
+    top:150px;
+}
+
+.otherLInksStop p{
+    padding-bottom:10px;
+}
+
+ .links{
+     display:flex;
+     flex-direction:row;
+     justify-content: center;
+     align-items:center;
+ }

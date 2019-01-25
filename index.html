@@ -158,9 +158,9 @@
             <ul>
                 <li><h2>Circle Clip-Paths</h2></li>
                 <div class="infoSessionCircle">
-                    <li><p>Values needed: You have to pass in the radius value(in px or %).Optionally, you can define the location value if needed!</p></li>
+                    <li><p>Values needed: You have to pass in the radius value(in px or %). Optionally, you can define the location values as X, Y coordinates.</p></li>
                     <li>
-                        <p>Syntax: clip-path:circle ([radius.value] <span class='optional'>*at [x.location y.location]*</span>)</p>
+                        <p>Syntax: clip-path:circle ([radius.value] <span class='optional'>*at [X.location Y.location]*</span>)</p>
                     </li>
                     <li><p><span class='bold'>Code as shown: clip-path: circle(100px).</span></p></li>
                     <li>
@@ -178,7 +178,7 @@
             <ul>
                 <li><h2>Ellipse Clip-Paths</h2></li>
                 <div class="infoSessionEllipse">
-                    <li><p>Using the ellipse property with clip-path will give you ELLIPSES! You can use this property by passing in the shape radius length and then the height (these values can be in either px or % value). Optionally, you can define the location value if needed!</p></li>
+                    <li><p>Values needed: shape length vlaue and then the height value(in px or %). Optionally, you can define the location values as X, Y coordinates.</p></li>
                     <li><p>Syntax: clip-path: ellipse ([length.value height.value] <span class='optional'>*at [X.location Y.location]*</span>)</p></li>
                     <li><p><span class='bold'>Code as shown: clip-path: ellipse (150px 70px at 50% 50%)</span></p></li>
                     <li><p class="makeMeSmall">*Property Optional*</p></li>
@@ -190,12 +190,27 @@
         <div class="polygon">
             <ul>
                 <li><h2>Polygon Clip-Paths</h2></li>
+                <li><p>The Polygon property allows you to various X/Y coordinates to create a clip-path.</p></li>
+                <div class="polygonSyntax">
+                    <li>
+                        <p class='leftPolygon'><span class='bold'>Code as shown: clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%,
+                                60% 100%, 60% 80%, 0% 80%)</span></p>
+                    </li>
+                    <li>
+                        <p class='rightPolygon'><span class='bold'>Code as shown: clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100%
+                                80%, 40% 80%, 40% 100%, 0% 50%);</span></p>
+                    </li>
+                </div>
+                <li><div class="morePolygonFun">
+                    <div class="polygonClip">
+                    </div>
+                    <div class="polygonClip2">
+                    </div>
+                </div></li>
                 <div class="infoSessionPolygon">
-                    <li><p>The Polygon property allows you to various X/Y coordinates to create a clip-path.</p>
-
                        <li>
                            <div class="polyCoordinates">
-                                <h3>How to Define a Polygon Coordinates</h3>
+                                <h3>Defining Polygon Coordinates</h3>
                             </div>
                         </li>
                        <li class='codepenWrapper'><p class="codepen" data-height="668" data-theme-id="dark" data-default-tab="result" data-user="imohkay" data-slug-hash="pJjVgE"
@@ -207,34 +222,63 @@
                         </p></li>
                         <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-
-                        <li><p class='polygonNotes'> Note: There are really great clip-path polygon resources out create your own clip-path like <a href="http://bennettfeely.com/clippy/">Clippy!</a></p></li>
-                    <div class="polygonSyntax">
-                        <li><p class='leftPolygon'><span class='bold'>Code as shown: clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%)</span></p></li>
-                        <li><p class='rightPolygon'><span class='bold'>Code as shown: clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);</span></p></li>
-                    </div>
-                 </div>
+                        <li><p class='polygonNotes'> Note: There are really great clip-path polygon resources out create your own clip-path like <a href="http://bennettfeely.com/clippy/" target='_blank'>Clippy!</a></p></li>
+                    
+                </div>
             </ul>
-            <div class="morePolygonFun">
-                <div class="polygonClip">
-                </div>
-                <div class="polygonClip2">
-                </div>
-            </div>
         </div>
     </section>
 
     <section class='inTheWild'>
         <div class="inTheWild--header">
             <h3>This is Fun! But Why?</h3>
-            <p>Check out these really cool effects!</p>
-            <a href="https://tympanus.net/codrops/2015/06/18/card-expansion-effect-svg-clippath/">Tympanus.net</a>
-        </div>
-    
-    </section>
+
+            <section class='rombusDemoWrapper'>
+                <div class="rombusDemo rombusTop">
+                    <div class="overlay">
+                        <div class="wordsContainer">
+                            <p>Home</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="center">
+                    <div class="rombusDemo rombusRight">
+                        <div class="overlay">
+                            <div class="overlayContainer">
+                                <p>About</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rombusDemo rombusLeft">
+                        <div class="overlay">
+                            <div class="overlayContainer">
+                                <p>Porfolio</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rombusDemo rombusBottom">
+                    <div class="overlay">
+                        <div class="wordsContainer">
+                            <p>Contact</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+        </section>
+        <section class="links">
+                <div class="otherLinks">
+                    <div class="otherLinksStop">
+                        <p>Check out this site for some other really cool effects!</p>
+                        <a href="https://tympanus.net/codrops/2015/06/18/card-expansion-effect-svg-clippath/">Tympanus.net</a>
+                    </div>
+                </div>
+            </div>
    <div class="helpfulLinks">
         <h3> Helpful Links:</h3>
-        <ul>
+        <ul class='helpfulLinksStop'>
             <li>
                 <a href="https://beyond-paper.com/clip-path-polygons-explained/">Beyond Paper: Clip Path Polygons Explained</a>
             </li>
@@ -244,7 +288,9 @@
                 <a href="https://css-tricks.com/clipping-masking-css/">CSS-Tricks: Clipping and Masking in CSS</a>
             </li>
         </ul>
-    <h3>
+    </div>
+</section>       
+
     </main> 
     <footer>
         <p>Dustin 2019</p>
