@@ -3,6 +3,8 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 .clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
 body{
    background-color:#95b0b4
 }
@@ -13,6 +15,7 @@ body{
 header{
     position:relative;
     clip-path: polygon( 0 10%, 100% 0%, 100% 90%, 0% 100%);
+ 
  
  
 }
@@ -45,6 +48,7 @@ font-family: 'Permanent Marker', cursive;
 padding: 0 5px;
 font-size: 2.5rem;
 letter-spacing: .5px;
+
 
 }
 
@@ -107,6 +111,10 @@ letter-spacing: .5px;
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
 } 
 
+.mainInfo li{
+    list-style:none;
+    padding-left:20px;
+}
 
 .shapes:nth-child(4n+3){
     background-color:#c9c3db;
@@ -197,7 +205,7 @@ p{
 
 .ellipseClip:hover{
     clip-path:ellipse(150px 70px at 50% 50%);
-    transition: 3s all ease;
+    transition: 2s all ease;
 }
 
 .bold{
@@ -235,13 +243,47 @@ p{
     
 }
 
+.polygon h3{
+    font-family:'roboto mono', sans-serif;
+   
+}
+
+.polyCoordinates{
+    height: 100px;
+   background-color:#324b4e;
+   text-align:center;
+   color:white;
+   display:flex;
+   flex-direction:column;
+   justify-content:center;
+   align-items:center;
+clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%)
+}
+
+.inTheWild--header h3{
+   
+    height: 100px;
+   background-color:#324b4e;
+   text-align:center;
+   color:white;
+   display:flex;
+   flex-direction:column;
+   justify-content:center;
+   align-items:center;
+   clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
+   font-family:'roboto mono', sans-serif;
+}
+
+.polygonNotes{
+    margin-top:40px;
+}
 
 .polygonClip{
      border: #ff8c40 5px solid;
     width: 48%;
     height:450px;
     background-color:#938ea4;
-    clip-path:polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    clip-path:polygon(0 0, 100% 0%, 100% 100%, 0% 100%, 0 100%, 0 100%, 0 100%);
     margin-right: 10px;
     
 }
@@ -256,12 +298,12 @@ p{
     width: 48%;
     height: 450px;
     background-color:#d1ebe3;
-    clip-path:polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    clip-path:polygon(0 0, 100% 0%, 100% 100%, 0% 100%, 0 100%, 0 100%, 0 100%);
 }
 
 .polygonClip2:hover{
     clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
-     /* transition: 2s all ease; */
+     transition: 2s all ease;
 }
 
 .makeMeSmall{

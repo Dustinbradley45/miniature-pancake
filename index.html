@@ -42,9 +42,37 @@
         <div class="shapes"></div>
         <div class="shapes"></div>
         <div class="shapes"></div>
-        <div class='headerTitle'>  
-            <h1>We Love Clip-Paths!</h1> 
-        </div> 
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+                                                                                <div class='headerTitle'>  
+                                                                                    <h1>We Love Clip-Paths!</h1> 
+                                                                                </div> 
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
+        <div class="shapes"></div>
         <div class="shapes"></div>
         <div class="shapes"></div>
         <div class="shapes"></div>
@@ -101,29 +129,36 @@
     <section class='mainInfo whatIs'>
         <div>
             <h2>What is a Clip-Path?</h2>
-            <p>A clip path is a way to 'cut' portions and sizes of elements on your webpage. In actuality, while it looks like it is cut, the portions are actually just hidden! In other words it defines what parts of an image is visible.</p>
-            <p>You can use clip-path properties on backgrounds, images, and most semantic elements out there (i.e. divs, sections, etc.)</p>
-        <h4>Tips for CSS clip-paths:</h4>
+                <ul>
+                    <li>
+                        <p>Replaced the CSS property 'Clip'. </p></li>
+                    <li>
+                        <p>Defines the parameters (or path) of an element a developer wants to be seen/hidden.</p>
+                    </li>
+                    <li>
+                      <p>Can use on images, divs, sections and other sematic elements.</p>
+                    </li>
+                    <li>
+                        <p>Clip-paths can be used with transitions and animations</p>
+                    </li>
+                    <li>
+                        <p>Not supported by IE and Edge</p>
+                    </li>
+                </ul>
+        <h4>Hot Tip!</h4>
         <div class="tipsFor">
-            <ul>
-                <li>Since clip-path does not actually cut any portion of the element the space that is then blank will still be registering to your browser as filled space! For instance, if you have a div element with a width and height of 500px, and use clip-path to change the shape, the newly created white space will still be counted as the total size of the originally shaped div you had created. You can see this by opening up your dev tools. </li>
-            </ul>
-        </div>
-        <div class="whenCanI">
-            <h4>When Can I use Clip-Path</h4>
-            <p>Clip-Path is compatible on most modern browsers, but is not compatible with IE or Edge.
-        </div>
+            <p>No matter how much of an element you clip it will still have the dimensions of the original coded element.</p>
+        
        
     </section>
     <section class="typesOfClipPath">
-
 
         <!-- TYPES OF CLIP PATHS -->
         <div class="circle">
             <ul>
                 <li><h2>Circle Clip-Paths</h2></li>
                 <div class="infoSessionCircle">
-                    <li><p>Using the circle property with clip-path will give you a circle! You have to pass in the radius value(in px).Optionally, you can define the location value if needed!</p></li>
+                    <li><p>Values needed: You have to pass in the radius value(in px or %).Optionally, you can define the location value if needed!</p></li>
                     <li>
                         <p>Syntax: clip-path:circle ([radius.value] <span class='optional'>*at [x.location y.location]*</span>)</p>
                     </li>
@@ -156,7 +191,24 @@
             <ul>
                 <li><h2>Polygon Clip-Paths</h2></li>
                 <div class="infoSessionPolygon">
-                    <li><p>The Polygon property allows you to use polygons to create fun shapes of all varieties! For each 'point' of the polygon we set a percentage value for both the X and Y values. Note: There are really great clip-path polygon resources out there like <a href="http://bennettfeely.com/clippy/">Clippy!</a></li>
+                    <li><p>The Polygon property allows you to various X/Y coordinates to create a clip-path.</p>
+
+                       <li>
+                           <div class="polyCoordinates">
+                                <h3>How to Define a Polygon Coordinates</h3>
+                            </div>
+                        </li>
+                       <li class='codepenWrapper'><p class="codepen" data-height="668" data-theme-id="dark" data-default-tab="result" data-user="imohkay" data-slug-hash="pJjVgE"
+                            style="height: 668px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;"
+                            data-pen-title="Clip-path: Polygon coordinates">
+                            <span>See the Pen <a href="https://codepen.io/imohkay/pen/pJjVgE/">
+                                    Clip-path: Polygon coordinates</a> by Karen Menezes (<a href="https://codepen.io/imohkay">@imohkay</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                        </p></li>
+                        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+
+                        <li><p class='polygonNotes'> Note: There are really great clip-path polygon resources out create your own clip-path like <a href="http://bennettfeely.com/clippy/">Clippy!</a></p></li>
                     <div class="polygonSyntax">
                         <li><p class='leftPolygon'><span class='bold'>Code as shown: clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%)</span></p></li>
                         <li><p class='rightPolygon'><span class='bold'>Code as shown: clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);</span></p></li>
@@ -171,6 +223,15 @@
             </div>
         </div>
     </section>
+
+    <section class='inTheWild'>
+        <div class="inTheWild--header">
+            <h3>This is Fun! But Why?</h3>
+            <p>Check out these really cool effects!</p>
+            <a href="https://tympanus.net/codrops/2015/06/18/card-expansion-effect-svg-clippath/">Tympanus.net</a>
+        </div>
+    
+    </section>
    <div class="helpfulLinks">
         <h3> Helpful Links:</h3>
         <ul>
@@ -182,11 +243,7 @@
             </li><li>
                 <a href="https://css-tricks.com/clipping-masking-css/">CSS-Tricks: Clipping and Masking in CSS</a>
             </li>
-        
         </ul>
-
-   
-    
     <h3>
     </main> 
     <footer>
