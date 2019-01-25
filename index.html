@@ -123,7 +123,7 @@
             <ul>
                 <li><h2>Circle Clip-Paths</h2></li>
                 <div class="infoSessionCircle">
-                    <li><p>Using the circle property with clip-path will give you a circle! You have to pass in the radius value(in px).Optionally, you can define the location value if needed!</p></li>
+                    <li><p>Values needed: You have to pass in the radius value(in px or %). Optionally, you can define the location value if needed.</p></li>
                     <li>
                         <p>Syntax: clip-path:circle ([radius.value] <span class='optional'>*at [x.location y.location]*</span>)</p>
                     </li>
@@ -131,6 +131,8 @@
                     <li>
                         <p class="makeMeSmall">*Property Optional*</p>
                     </li>
+                    <li><input type="text" id='radiusVal'>
+                    <button id='getAnswer'></button></li>
                 </div>
             </ul>
             <div class="circleClip">
@@ -160,6 +162,25 @@
                     <div class="polygonSyntax">
                         <li><p class='leftPolygon'><span class='bold'>Code as shown: clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%)</span></p></li>
                         <li><p class='rightPolygon'><span class='bold'>Code as shown: clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);</span></p></li>
+                    </div>
+                    <div class="polygonPlay">
+                        <div class="polygonPlay--Val1">
+                            <input type="text" id='val1--X'>
+                            <input type="text" id='val1--Y'>
+                        </div>
+                        <div class="polygonPlay--Val2">
+                            <input type="text" id='val2--X'>
+                            <input type="text" id='val2--Y'>
+                        </div>
+                        <div class="polygonPlay--Val3">
+                            <input type="text" id='val3--X'>
+                            <input type="text" id='val3--Y'>
+                        </div>
+                        <div class="polygonPlay--Val4">
+                            <input type="text" id='val4--X'>
+                            <input type="text" id='val4--Y'>
+                        </div>
+                        <button class="reset">Reset</button>
                     </div>
                  </div>
             </ul>
